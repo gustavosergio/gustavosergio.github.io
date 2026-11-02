@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gustavosergio.github.io/sitemap.xml
