@@ -43,7 +43,7 @@ No repositório, abra **Settings → Pages → Build and deployment → Source �
 
 O README e o package.json públicos de `gustavosergio/DonaSil` foram consultados. A descrição usa catálogo, carrinho, finalização pelo WhatsApp e gestão de produtos/estoque, em vez de afirmar um gateway de pagamentos. A URL de demonstração foi fornecida pelo proprietário.
 
-OpenBit: conversor de câmbio e painel de criptomoedas. Tecnologias e funcionalidades conferidas no README e package.json públicos do projeto. O link de demonstração está omitido até o proprietário fornecer o endereço definitivo.
+OpenBit: conversor de câmbio e painel de criptomoedas. Tecnologias e funcionalidades conferidas no README e package.json públicos do projeto. Demonstração publicada em https://gustavosergio.github.io/OpenBit/ e disponível no botão “Visitar projeto” do portfólio.
 
 LinkedIn e e-mail fornecidos pelo proprietário estão ativos. Currículo disponível para consulta em PDF. A seção de certificações foi removida.
 

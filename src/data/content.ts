@@ -161,7 +161,7 @@ export const projects = [
     },
     name: "OpenBit",
     repo: "https://github.com/gustavosergio/OpenBit",
-    live: null,
+    live: "https://gustavosergio.github.io/OpenBit/",
     tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Recharts"],
   },
 ] as const;
