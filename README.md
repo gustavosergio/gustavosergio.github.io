@@ -50,3 +50,5 @@ LinkedIn e e-mail fornecidos pelo proprietário estão ativos. Currículo em atu
 Ícones de marca: [Devicon](https://github.com/devicons/devicon), licença MIT em `public/icons/LICENSE`. SQL usa o símbolo de banco de dados do Lucide por não possuir um logotipo oficial único.
 
 Metadados sociais têm português como idioma padrão; o conteúdo visível é traduzido integralmente no navegador. Preferências ficam no armazenamento local. Sem JavaScript, o conteúdo inicial em português permanece disponível.
+
+As capturas reais dos projetos, fornecidas pelo proprietário, ficam em `public/projects/`. O estágio na Stringhini está identificado como concluído, sem datas presumidas.

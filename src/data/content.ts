@@ -42,11 +42,6 @@ export const content = {
     secondDesc:
       "Conversor de moedas e painel de criptomoedas com gráficos de histórico, busca, favoritos e cotações em tempo real para pares disponíveis na Binance.",
     unavailable: "Repositório indisponível para consulta pública",
-    concept: "APRESENTAÇÃO VISUAL · SEM CAPTURA DO SITE",
-    shop: "Moda com personalidade.",
-    shopSub: "Catálogo · Carrinho · Gestão",
-    openbit: "OpenBit",
-    openbitSub: "Câmbio e criptomoedas em um só lugar",
     techLabel: "TECNOLOGIAS",
     techTitle: "Ferramentas para construir.",
     techIntro:
@@ -55,8 +50,9 @@ export const content = {
     journeyTitle: "Cada experiência conta.",
     experience: "Experiência",
     role: "Estagiário de Homologação",
+    internshipStatus: "Estágio concluído",
     company: "Stringhini",
-    job: "Atuação com qualidade e validação de dados, identificação de inconsistências e organização de informações. No dia a dia, colaboro com a equipe para investigar problemas e manter as informações organizadas.",
+    job: "Atuei com qualidade e validação de dados, identificação de inconsistências e organização de informações. Durante o estágio, colaborei com a equipe para investigar problemas e manter as informações organizadas.",
     education: "Formação",
     university: "Universidade Católica de Pernambuco",
     degree: "Bacharelado em Ciência da Computação",
@@ -115,11 +111,6 @@ export const content = {
     secondDesc:
       "A currency converter and cryptocurrency dashboard with historical charts, search, favorites and live prices for supported Binance pairs.",
     unavailable: "Repository unavailable for public inspection",
-    concept: "VISUAL CONCEPT · NOT A SITE SCREENSHOT",
-    shop: "Fashion with personality.",
-    shopSub: "Catalog · Cart · Management",
-    openbit: "OpenBit",
-    openbitSub: "Currencies and crypto in one place",
     techLabel: "TECHNOLOGIES",
     techTitle: "Tools for building.",
     techIntro:
@@ -128,8 +119,9 @@ export const content = {
     journeyTitle: "Every experience matters.",
     experience: "Experience",
     role: "Data Validation Intern",
+    internshipStatus: "Internship completed",
     company: "Stringhini",
-    job: "Working with data quality and validation, identifying inconsistencies and organizing information. I collaborate with the team to investigate problems and keep information organized.",
+    job: "Worked with data quality and validation, identified inconsistencies and organized information. During the internship, I collaborated with the team to investigate problems and keep information organized.",
     education: "Education",
     university: "Catholic University of Pernambuco",
     degree: "Bachelor’s degree in Computer Science",
@@ -150,6 +142,11 @@ export const content = {
 export const projects = [
   {
     id: "donasil",
+    image: "/projects/dona-sil.png",
+    imageAlt: {
+      pt: "Página inicial da loja Dona Sil",
+      en: "Dona Sil store homepage",
+    },
     name: "Loja Dona Sil",
     repo: "https://github.com/gustavosergio/DonaSil",
     live: "https://donasilmodafeminina.com.br",
@@ -157,6 +154,11 @@ export const projects = [
   },
   {
     id: "openbit",
+    image: "/projects/openbit.png",
+    imageAlt: {
+      pt: "Conversor de câmbio e gráfico de histórico do OpenBit",
+      en: "OpenBit currency converter and historical chart",
+    },
     name: "OpenBit",
     repo: "https://github.com/gustavosergio/OpenBit",
     live: null,

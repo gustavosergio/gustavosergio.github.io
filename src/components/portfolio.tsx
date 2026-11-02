@@ -9,7 +9,6 @@ import {
   Linkedin,
   Mail,
   Database,
-  ChartNoAxesCombined,
   Sun,
   Moon,
   Menu,
@@ -289,30 +288,13 @@ export default function Portfolio() {
           <div className="projects-grid">
             {projects.map((project, i) => (
               <article className="project-card" key={project.id}>
-                <div className={`project-art art-${project.id}`}>
-                  {i === 0 ? (
-                    <div className="shop-concept">
-                      <span>DONA SIL</span>
-                      <div className="shop-line" />
-                      <h3>{t.shop}</h3>
-                      <p>{t.shopSub}</p>
-                      <div className="swatches">
-                        <span />
-                        <span />
-                        <span />
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="openbit-concept">
-                      <span className="openbit-monogram">
-                        <ChartNoAxesCombined size={52} />
-                      </span>
-                      <h3>{t.openbit}</h3>
-                      <p>{t.openbitSub}</p>
-                      <div className="openbit-line" />
-                    </div>
-                  )}
-                  <span className="concept-label">{t.concept}</span>
+                <div className={`project-screenshot screenshot-${project.id}`}>
+                  <Image
+                    src={project.image}
+                    alt={project.imageAlt[language]}
+                    fill
+                    sizes="(max-width: 760px) 100vw, 560px"
+                  />
                 </div>
                 <div className="project-info">
                   <p className="section-label">
@@ -374,6 +356,7 @@ export default function Portfolio() {
               <p className="overline">{t.experience}</p>
               <h3>{t.role}</h3>
               <p className="company">{t.company}</p>
+              <span className="internship-status">{t.internshipStatus}</span>
               <p className="body-text">{t.job}</p>
             </article>
             <div className="education-stack">
