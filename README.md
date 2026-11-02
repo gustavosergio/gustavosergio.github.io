@@ -33,7 +33,7 @@ O build gera `out/`, pronto para um servidor estático. `output: 'export'`, imag
 - `scripts/generate-og.mjs`: gera o PNG de compartilhamento com `node scripts/generate-og.mjs` (usa Sharp, fornecido pelo Next.js).
 - `.github/workflows/deploy.yml`: validação, build e deploy automático em pushes para `main`.
 
-Contatos estão centralizados em `src/data/content.ts`. O currículo está em atualização; adicione o PDF a `public/` e substitua o botão desabilitado por um link quando estiver pronto.
+Contatos estão centralizados em `src/data/content.ts`. O currículo está disponível em `public/Curriculo_Gustavo_Sergio.pdf`; substitua esse arquivo para atualizar o PDF publicado.
 
 ## Publicação no GitHub Pages
 
@@ -45,7 +45,7 @@ O README e o package.json públicos de `gustavosergio/DonaSil` foram consultados
 
 OpenBit: conversor de câmbio e painel de criptomoedas. Tecnologias e funcionalidades conferidas no README e package.json públicos do projeto. O link de demonstração está omitido até o proprietário fornecer o endereço definitivo.
 
-LinkedIn e e-mail fornecidos pelo proprietário estão ativos. Currículo em atualização. A seção de certificações foi removida.
+LinkedIn e e-mail fornecidos pelo proprietário estão ativos. Currículo disponível para consulta em PDF. A seção de certificações foi removida.
 
 Ícones de marca: [Devicon](https://github.com/devicons/devicon), licença MIT em `public/icons/LICENSE`. SQL usa o símbolo de banco de dados do Lucide por não possuir um logotipo oficial único.
 

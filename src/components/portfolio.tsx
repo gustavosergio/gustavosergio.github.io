@@ -408,13 +408,13 @@ export default function Portfolio() {
                 </span>
                 <ArrowUpRight size={20} />
               </a>
-              <button disabled>
+              <a href="/Curriculo_Gustavo_Sergio.pdf" target="_blank" rel="noopener noreferrer">
                 <FileDown size={20} />
                 <span>
                   {t.resume}
-                  <small>{t.pending}</small>
+                  <small>{t.viewResume}</small>
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </section>
