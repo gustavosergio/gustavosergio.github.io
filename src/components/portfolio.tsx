@@ -285,7 +285,6 @@ export default function Portfolio() {
               <p className="section-label">{t.projectsLabel}</p>
               <h2 className="section-title">{t.projectsTitle}</h2>
             </div>
-            <p>{t.projectsIntro}</p>
           </div>
           <div className="projects-grid">
             {projects.map((project, i) => (
@@ -330,10 +329,6 @@ export default function Portfolio() {
                     <External href={project.repo}>
                       <Github size={16} />
                       {t.source}
-                    </External>
-                    <External href={contacts.linkedin}>
-                      <Linkedin size={16} />
-                      LinkedIn
                     </External>
                     {project.live && (
                       <External href={project.live}>
@@ -389,13 +384,6 @@ export default function Portfolio() {
                 <p>{t.university}</p>
                 <span className="semester">{t.semester}</span>
               </article>
-              <article className="certificates">
-                <Sparkles size={20} />
-                <div>
-                  <h3>{t.certificates}</h3>
-                  <p>{t.certificatesText}</p>
-                </div>
-              </article>
             </div>
           </div>
         </section>
@@ -449,9 +437,8 @@ export default function Portfolio() {
         </section>
       </main>
       <footer className="container footer">
-        <a className="logo" href="#inicio">
-          g<span>s</span>
-          <i>.</i>
+        <a href="#inicio" aria-label="Gustavo Sérgio">
+          <Image src="/icon.svg" alt="GS" width={48} height={48} />
         </a>
         <p>
           © {new Date().getFullYear()} {t.rights} <span>· {t.footer}</span>

@@ -43,9 +43,9 @@ No repositório, abra **Settings → Pages → Build and deployment → Source �
 
 O README e o package.json públicos de `gustavosergio/DonaSil` foram consultados. A descrição usa catálogo, carrinho, finalização pelo WhatsApp e gestão de produtos/estoque, em vez de afirmar um gateway de pagamentos. A URL de demonstração foi fornecida pelo proprietário.
 
-OpenBit: conversor de câmbio e painel de criptomoedas. Tecnologias e funcionalidades conferidas no README e package.json públicos do projeto.
+OpenBit: conversor de câmbio e painel de criptomoedas. Tecnologias e funcionalidades conferidas no README e package.json públicos do projeto. O link de demonstração está omitido até o proprietário fornecer o endereço definitivo.
 
-LinkedIn e e-mail fornecidos pelo proprietário estão ativos. Currículo em atualização e certificados aguardando fornecimento.
+LinkedIn e e-mail fornecidos pelo proprietário estão ativos. Currículo em atualização. A seção de certificações foi removida.
 
 Ícones de marca: [Devicon](https://github.com/devicons/devicon), licença MIT em `public/icons/LICENSE`. SQL usa o símbolo de banco de dados do Lucide por não possuir um logotipo oficial único.
 

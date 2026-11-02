@@ -33,8 +33,6 @@ export const content = {
     mindsetSub: "Resolução de problemas e trabalho em equipe",
     projectsLabel: "PROJETOS SELECIONADOS",
     projectsTitle: "Da ideia à prática.",
-    projectsIntro:
-      "Projetos que mostram meu jeito de pensar, aprender e desenvolver.",
     source: "Código no GitHub",
     live: "Visitar projeto",
     firstType: "E-COMMERCE / FULL STACK",
@@ -63,9 +61,6 @@ export const content = {
     university: "Universidade Católica de Pernambuco",
     degree: "Bacharelado em Ciência da Computação",
     semester: "2º período de 8 · Em andamento",
-    certificates: "Cursos e certificações",
-    certificatesText:
-      "Novas conquistas serão adicionadas aqui após a conclusão dos cursos.",
     contactLabel: "VAMOS CONVERSAR",
     contactTitle: "Vamos conversar",
     contactEnd: "sobre seu próximo projeto.",
@@ -111,7 +106,6 @@ export const content = {
     mindsetSub: "Problem solving and teamwork",
     projectsLabel: "SELECTED PROJECTS",
     projectsTitle: "From ideas to practice.",
-    projectsIntro: "Projects that reflect how I think, learn and develop.",
     source: "Code on GitHub",
     live: "Visit project",
     firstType: "E-COMMERCE / FULL STACK",
@@ -140,9 +134,6 @@ export const content = {
     university: "Catholic University of Pernambuco",
     degree: "Bachelor’s degree in Computer Science",
     semester: "Semester 2 of 8 · In progress",
-    certificates: "Courses and certifications",
-    certificatesText:
-      "Completed courses and certifications will be added here as I progress.",
     contactLabel: "LET’S CONNECT",
     contactTitle: "Let’s talk",
     contactEnd: "about your next project.",
@@ -161,14 +152,14 @@ export const projects = [
     id: "donasil",
     name: "Loja Dona Sil",
     repo: "https://github.com/gustavosergio/DonaSil",
-    live: "https://loja-dona-sil.donasil-gustavosergio.workers.dev",
+    live: "https://donasilmodafeminina.com.br",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL"],
   },
   {
     id: "openbit",
     name: "OpenBit",
     repo: "https://github.com/gustavosergio/OpenBit",
-    live: "https://gustavosergio.github.io/OpenBit/",
+    live: null,
     tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Recharts"],
   },
 ] as const;
