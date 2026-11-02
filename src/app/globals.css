@@ -497,7 +497,7 @@ h1 {
   background: #e6dfd1;
   color: #37352e;
 }
-.art-juliana {
+.art-openbit {
   background: #cfd9d3;
   color: #334c45;
 }
@@ -565,11 +565,11 @@ h1 {
   letter-spacing: 1.2px;
   opacity: 0.65;
 }
-.doctor-concept {
+.openbit-concept {
   text-align: center;
   position: relative;
 }
-.doctor-monogram {
+.openbit-monogram {
   display: block;
   font-family: Georgia, serif;
   font-size: 65px;
@@ -577,17 +577,17 @@ h1 {
   font-weight: 400;
   line-height: 1.1;
 }
-.doctor-concept h3 {
+.openbit-concept h3 {
   font-family: Georgia, serif;
   font-size: 26px;
   font-weight: 400;
   margin: 11px 0;
 }
-.doctor-concept p {
+.openbit-concept p {
   font-size: 8px;
   letter-spacing: 2px;
 }
-.doctor-line {
+.openbit-line {
   width: 40px;
   height: 1px;
   background: #334c4555;
@@ -1204,5 +1204,79 @@ h1 {
   .motion-ready .reveal {
     opacity: 1;
     transform: none;
+  }
+}
+
+.header-name {
+  font-size: 19px;
+  font-weight: 650;
+  letter-spacing: -0.6px;
+  white-space: nowrap;
+}
+.social-linkedin {
+  margin-left: 22px;
+}
+.project-links {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.technology-logo {
+  object-fit: contain;
+}
+.logo-nextjs,
+.logo-github {
+  background: #fff;
+  border-radius: 50%;
+  padding: 2px;
+}
+.openbit-monogram {
+  display: flex;
+  justify-content: center;
+  color: #9faeff;
+}
+.art-openbit {
+  background: #151d35;
+  color: #e1e7ff;
+}
+.openbit-concept h3 {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+}
+.openbit-line {
+  background: #879bf0;
+}
+.contact-options small {
+  overflow-wrap: anywhere;
+}
+.contact-options > a > span {
+  min-width: 0;
+}
+@media (max-width: 1000px) and (min-width: 761px) {
+  .desktop-nav {
+    gap: 12px;
+  }
+  .header-inner {
+    padding-inline: 24px;
+  }
+  .header-name {
+    font-size: 17px;
+  }
+}
+@media (max-width: 400px) {
+  .header-name {
+    font-size: 16px;
+  }
+  .controls {
+    gap: 3px;
+  }
+  .controls .divider {
+    display: none;
+  }
+  .language {
+    padding: 4px;
+  }
+  .icon-button {
+    padding: 5px;
   }
 }

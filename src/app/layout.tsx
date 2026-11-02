@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gustavo Sérgio — Full Stack Developer",
     description:
-      "Ideias que se transformam em experiências digitais. Conheça meus projetos.",
+      "Projetos de desenvolvimento web de Gustavo Sérgio. Conheça a Loja Dona Sil e o OpenBit.",
     url: "/",
     type: "website",
     locale: "pt_BR",

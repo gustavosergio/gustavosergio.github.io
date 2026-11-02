@@ -33,7 +33,7 @@ O build gera `out/`, pronto para um servidor estático. `output: 'export'`, imag
 - `scripts/generate-og.mjs`: gera o PNG de compartilhamento com `node scripts/generate-og.mjs` (usa Sharp, fornecido pelo Next.js).
 - `.github/workflows/deploy.yml`: validação, build e deploy automático em pushes para `main`.
 
-Para adicionar e-mail ou LinkedIn, substitua o botão desabilitado por um link real no bloco de contato. Para o currículo, adicione o PDF a `public/` e use um link com `download`. Nunca publique dados pessoais sem verificar os destinos. Atualize o período acadêmico em ambas as traduções quando necessário.
+Contatos estão centralizados em `src/data/content.ts`. O currículo está em atualização; adicione o PDF a `public/` e substitua o botão desabilitado por um link quando estiver pronto.
 
 ## Publicação no GitHub Pages
 
@@ -43,8 +43,10 @@ No repositório, abra **Settings → Pages → Build and deployment → Source �
 
 O README e o package.json públicos de `gustavosergio/DonaSil` foram consultados. A descrição usa catálogo, carrinho, finalização pelo WhatsApp e gestão de produtos/estoque, em vez de afirmar um gateway de pagamentos. A URL de demonstração foi fornecida pelo proprietário.
 
-O repositório informado para Dra. Juliana retornou HTTP 404 na consulta. O projeto aparece com descrição mínima fornecida pelo proprietário, sem tecnologias atribuídas, link ativo ou demonstração inventada. Os visuais dos cards são composições ilustrativas em CSS, identificadas como tal.
+OpenBit: conversor de câmbio e painel de criptomoedas. Tecnologias e funcionalidades conferidas no README e package.json públicos do projeto.
 
-Pendentes: LinkedIn, e-mail profissional, currículo PDF e certificados concluídos. Contatos não fornecidos aparecem desabilitados. O contato ativo leva ao perfil público do GitHub, sem formulário ou envio de mensagem automático.
+LinkedIn e e-mail fornecidos pelo proprietário estão ativos. Currículo em atualização e certificados aguardando fornecimento.
+
+Ícones de marca: [Devicon](https://github.com/devicons/devicon), licença MIT em `public/icons/LICENSE`. SQL usa o símbolo de banco de dados do Lucide por não possuir um logotipo oficial único.
 
 Metadados sociais têm português como idioma padrão; o conteúdo visível é traduzido integralmente no navegador. Preferências ficam no armazenamento local. Sem JavaScript, o conteúdo inicial em português permanece disponível.

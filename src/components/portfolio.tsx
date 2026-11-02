@@ -6,6 +6,10 @@ import {
   ArrowDown,
   ArrowRight,
   Github,
+  Linkedin,
+  Mail,
+  Database,
+  ChartNoAxesCombined,
   Sun,
   Moon,
   Menu,
@@ -17,7 +21,13 @@ import {
   BriefcaseBusiness,
   FileDown,
 } from "lucide-react";
-import { content, projects, technologies, type Language } from "@/data/content";
+import {
+  content,
+  projects,
+  technologies,
+  contacts,
+  type Language,
+} from "@/data/content";
 const ids = ["sobre", "projetos", "tecnologias", "trajetoria", "contato"];
 function External({
   href,
@@ -97,9 +107,8 @@ export default function Portfolio() {
       </a>
       <header className="header">
         <div className="header-inner">
-          <a href="#inicio" className="logo" aria-label="Gustavo Sérgio">
-            g<span>s</span>
-            <i>.</i>
+          <a href="#inicio" className="header-name" aria-label="Gustavo Sérgio">
+            Gustavo Sérgio
           </a>
           <nav
             className="desktop-nav"
@@ -184,12 +193,17 @@ export default function Portfolio() {
                 <ArrowRight size={17} />
               </a>
             </div>
-            <External
-              href="https://github.com/gustavosergio"
-              className="social"
-            >
+            <External href={contacts.github} className="social">
               <Github size={18} />
               GitHub
+              <ArrowUpRight size={14} />
+            </External>
+            <External
+              href={contacts.linkedin}
+              className="social social-linkedin"
+            >
+              <Linkedin size={18} />
+              LinkedIn
               <ArrowUpRight size={14} />
             </External>
           </div>
@@ -233,7 +247,6 @@ export default function Portfolio() {
           <a href="#sobre" className="scroll-hint">
             <ArrowDown size={15} />
             {t.scroll}
-            <span>01 — 05</span>
           </a>
         </section>
         <section id="sobre" className="section container reveal">
@@ -278,7 +291,6 @@ export default function Portfolio() {
             {projects.map((project, i) => (
               <article className="project-card" key={project.id}>
                 <div className={`project-art art-${project.id}`}>
-                  <span className="art-number">0{i + 1}</span>
                   {i === 0 ? (
                     <div className="shop-concept">
                       <span>DONA SIL</span>
@@ -292,11 +304,13 @@ export default function Portfolio() {
                       </div>
                     </div>
                   ) : (
-                    <div className="doctor-concept">
-                      <span className="doctor-monogram">J.</span>
-                      <h3>{t.doctor}</h3>
-                      <p>{t.doctorSub}</p>
-                      <div className="doctor-line" />
+                    <div className="openbit-concept">
+                      <span className="openbit-monogram">
+                        <ChartNoAxesCombined size={52} />
+                      </span>
+                      <h3>{t.openbit}</h3>
+                      <p>{t.openbitSub}</p>
+                      <div className="openbit-line" />
                     </div>
                   )}
                   <span className="concept-label">{t.concept}</span>
@@ -305,11 +319,7 @@ export default function Portfolio() {
                   <p className="section-label">
                     {i === 0 ? t.firstType : t.secondType}
                   </p>
-                  <h3>
-                    {language === "en" && project.id === "juliana"
-                      ? "Landing Page — Dr. Juliana"
-                      : project.name}
-                  </h3>
+                  <h3>{project.name}</h3>
                   <p>{i === 0 ? t.firstDesc : t.secondDesc}</p>
                   <div className="tags">
                     {project.tags.map((tag) => (
@@ -317,14 +327,14 @@ export default function Portfolio() {
                     ))}
                   </div>
                   <div className="project-links">
-                    {i === 0 ? (
-                      <External href={project.repo}>
-                        <Github size={16} />
-                        {t.source}
-                      </External>
-                    ) : (
-                      <span className="unavailable">{t.unavailable}</span>
-                    )}
+                    <External href={project.repo}>
+                      <Github size={16} />
+                      {t.source}
+                    </External>
+                    <External href={contacts.linkedin}>
+                      <Linkedin size={16} />
+                      LinkedIn
+                    </External>
                     {project.live && (
                       <External href={project.live}>
                         {t.live}
@@ -344,15 +354,16 @@ export default function Portfolio() {
           <div className="tech-grid">
             {technologies.map(([name, mark]) => (
               <div className="tech-card" key={name}>
-                {name === "GitHub" ? (
-                  <Github size={25} />
+                {mark === "database" ? (
+                  <Database size={30} aria-hidden="true" />
                 ) : (
-                  <span
-                    aria-hidden="true"
-                    className={`tech-mark tech-${name.replace(/[^a-z]/gi, "").toLowerCase()}`}
-                  >
-                    {mark}
-                  </span>
+                  <Image
+                    src={`/icons/${mark}.svg`}
+                    width={30}
+                    height={30}
+                    alt=""
+                    className={`technology-logo logo-${mark}`}
+                  />
                 )}
                 <span>{name}</span>
               </div>
@@ -398,37 +409,41 @@ export default function Portfolio() {
                 <span>{t.contactEnd}</span>
               </h2>
               <p>{t.contactText}</p>
-              <External
-                href="https://github.com/gustavosergio"
-                className="button primary"
-              >
-                {t.githubContact}
-                <ArrowUpRight size={18} />
-              </External>
+              <a href={`mailto:${contacts.email}`} className="button primary">
+                {t.emailContact}
+                <Mail size={18} />
+              </a>
             </div>
             <div className="contact-options">
-              <External href="https://github.com/gustavosergio">
+              <External href={contacts.github}>
                 <Github size={20} />
                 <span>
                   GitHub<small>@gustavosergio</small>
                 </span>
                 <ArrowUpRight size={20} />
               </External>
-              {["LinkedIn", t.email, t.resume].map((label, i) => (
-                <button key={label} disabled>
-                  {i === 2 ? (
-                    <FileDown size={20} />
-                  ) : (
-                    <span className="contact-symbol">
-                      {i === 0 ? "in" : "@"}
-                    </span>
-                  )}
-                  <span>
-                    {label}
-                    <small>{t.pending}</small>
-                  </span>
-                </button>
-              ))}
+              <External href={contacts.linkedin}>
+                <Linkedin size={20} />
+                <span>
+                  LinkedIn<small>Gustavo Sérgio</small>
+                </span>
+                <ArrowUpRight size={20} />
+              </External>
+              <a href={`mailto:${contacts.email}`}>
+                <Mail size={20} />
+                <span>
+                  {t.email}
+                  <small>{contacts.email}</small>
+                </span>
+                <ArrowUpRight size={20} />
+              </a>
+              <button disabled>
+                <FileDown size={20} />
+                <span>
+                  {t.resume}
+                  <small>{t.pending}</small>
+                </span>
+              </button>
             </div>
           </div>
         </section>
