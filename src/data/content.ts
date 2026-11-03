@@ -166,6 +166,7 @@ export const projects = [
   },
 ] as const;
 export const contacts = {
+  instagram: "https://www.instagram.com/gustavosergio.dev/",
   github: "https://github.com/gustavosergio",
   linkedin: "https://www.linkedin.com/in/gustavo-s%C3%A9rgio",
   email: "gustavosergiocordeiro@gmail.com",

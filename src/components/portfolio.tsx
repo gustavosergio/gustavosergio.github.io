@@ -7,6 +7,7 @@ import {
   ArrowRight,
   Github,
   Linkedin,
+  Instagram,
   Mail,
   Database,
   Sun,
@@ -397,6 +398,13 @@ export default function Portfolio() {
                 <Linkedin size={20} />
                 <span>
                   LinkedIn<small>Gustavo Sérgio</small>
+                </span>
+                <ArrowUpRight size={20} />
+              </External>
+              <External href={contacts.instagram}>
+                <Instagram size={20} />
+                <span>
+                  Instagram<small>@gustavosergio.dev</small>
                 </span>
                 <ArrowUpRight size={20} />
               </External>
